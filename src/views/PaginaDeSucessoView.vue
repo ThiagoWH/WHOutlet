@@ -1,5 +1,5 @@
 <template>
     <h1>
-        Pagina de sucesso
+        <img src="../img/compraRealizada.gif" alt="">
     </h1>
 </template>
