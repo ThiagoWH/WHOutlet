@@ -1,12 +1,17 @@
 <template>
-    <div class="card" style="width: 18rem;" v-for="produto in produtos">
-            <img :src='require(`../img/${produto.path}`)'>
-                    <div class="card-body">
-                    <h5 class="card-title"> {{ produto.nomeDoProduto }}</h5>
-                    <p class="card-text">{{ produto.Preco }}</p>
-                <button class="btn btn-orange">Comprar</button>
+    <h1> Seleções</h1>
+    <div class="container">
+        <div class="row">
+            <div class="card" style="width: 18rem;" v-for="produto in produtos">
+                <img :src='require(`../img/${produto.path}`)'>
+                        <div class="card-body">
+                        <h5 class="card-title"> {{ produto.nomeDoProduto }}</h5>
+                        <p class="card-text">{{ produto.Preco }}</p>
+                    <button class="btn btn-orange">Comprar</button>
+                </div>
             </div>
         </div>
+    </div>
 </template>
 
 <script>
@@ -27,16 +32,12 @@ export default{
         async getProducts(){
             onSnapshot(collection(db, 'produtos'),(snap) => {
                 snap.forEach((doc) => {
-                    this.produtos.push(doc.data());
+                    if (doc.data().categoria == 'selecao') {
+                        this.produtos.push(doc.data());
+                    }    
                 })
             })
         }
     }
 }
 </script>
-<style>
-.btn-orange {
-    background-color: #fd7e14;
-    font-weight: 700;
-}
-</style>

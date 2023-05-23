@@ -182,7 +182,7 @@
   </section>
   <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
-      <a href="https://web.whatsapp.com/" target="_blank">
+      <a href="https://api.whatsapp.com/send/?phone=5511977899540&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer">
         <div class="carousel-item active">
           <img src="../img/banner02.jpg" class="d-block w-100" alt="...">
         </div>
