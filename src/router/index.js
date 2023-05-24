@@ -1,11 +1,10 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import AboutView from '../views/AboutView'
 import FemininoView from '../views/FemininoView'
 import MasculinoView from '../views/MasculinoView'
 import SelecoesView from '../views/SelecoesView'
 import PaginaDoProdutoView from '../views/PaginaDoProdutoView'
-import PaginaDeSucessoView from '../views/PaginaDeSucessoView'
+
 const routes = [
   {
     path: '/',
@@ -13,11 +12,6 @@ const routes = [
     component: HomeView
   },
   {
-    path: '/about',
-    name: 'about',
-    component: AboutView
-  },
-    {
     path: '/Feminino',
     name: 'Feminino',
     component: FemininoView
@@ -33,14 +27,9 @@ const routes = [
     component: SelecoesView
   },
   {
-    path: '/PaginaDoProduto',
+    path: '/PaginaDoProduto/:id',
     name: 'PaginaDoProduto',
     component: PaginaDoProdutoView
-  },
-  {
-    path: '/PaginaDeSucesso',
-    name: 'PaginaDeSucesso',
-    component: PaginaDeSucessoView
   }
 ]
 

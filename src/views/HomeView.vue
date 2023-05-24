@@ -1,18 +1,18 @@
 <template>
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img src="../img/Banner.webp" class="d-block w-100" alt="...">
         </div>
       </div>
-    </div>
+  </div>
 
-    <div id="carouselExampleIndicators" class="carousel slide card-products-home" data-bs-ride="carousel">
+  <div id="carouselExampleIndicators" class="carousel slide card-products-home" data-bs-ride="carousel">
       <h1 class="title-destaque">Destaque</h1>
       <div class="carousel-inner">
-        <div class="carousel-item">
+        <div class="carousel-item active">
           <div class="container">
-            <div class="row">
+            <div class="row card-left">
               <!--Card1-->
               <div class="col">
                 <div class="card" style="width: 18rem;">
@@ -21,7 +21,6 @@
                     <h5 class="card-title">Real Madrid</h5>
                     <p class="card-text">R$: 120,00
                     </p>
-                    <a href="#" class="btn btn-orange">Comprar</a>
                   </div>
                 </div>
               </div>
@@ -33,7 +32,6 @@
                     <h5 class="card-title">Barcelona</h5>
                     <p class="card-text">R$: 120,00
                     </p>
-                    <a href="#" class="btn btn-orange">Comprar</a>
                   </div>
                 </div>
               </div>
@@ -45,18 +43,16 @@
                     <h5 class="card-title">Ajax</h5>
                     <p class="card-text">R$: 120,00
                     </p>
-                    <a href="#" class="btn btn-orange">Comprar</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="carousel-item active">
+        <div class="carousel-item">
           <div class="container">
-            <div class="row">
+            <div class="row card-left">
               <!--Card1-->
-      
               <div class="col">
                 <div class="card" style="width: 18rem;">
                   <img src="../img/Argentina.jpg" class="card-img-top" alt="...">
@@ -64,7 +60,6 @@
                     <h5 class="card-title">Argentina</h5>
                     <p class="card-text">R$: 120,00
                     </p>
-                    <a href="#" class="btn btn-orange">Comprar</a>
                   </div>
                 </div>
               </div>
@@ -76,7 +71,6 @@
                     <h5 class="card-title">Brasil</h5>
                     <p class="card-text">R$: 120,00
                     </p>
-                    <a href="#" class="btn btn-orange">Comprar</a>
                   </div>
                 </div>
               </div>
@@ -88,18 +82,16 @@
                     <h5 class="card-title">Corinthians</h5>
                     <p class="card-text">R$: 120,00
                     </p>
-                    <a href="#" class="btn btn-orange">Comprar</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="carousel-item">
+        <div class="carousel-item ">
           <div class="container">
-            <div class="row">
+            <div class="row card-left">
               <!--Card1-->
-      
               <div class="col">
                 <div class="card" style="width: 18rem;">
                   <img src="../img/sãoPaulo.jpg" class="card-img-top" alt="...">
@@ -107,7 +99,6 @@
                     <h5 class="card-title">São Paulo</h5>
                     <p class="card-text">R$: 120,00
                     </p>
-                    <a href="#" class="btn btn-orange">Comprar</a>
                   </div>
                 </div>
               </div>
@@ -119,7 +110,6 @@
                     <h5 class="card-title">Paris Saint-Germain</h5>
                     <p class="card-text">R$: 120,00
                     </p>
-                    <a href="#" class="btn btn-orange">Comprar</a>
                   </div>
                 </div>
               </div>
@@ -131,7 +121,6 @@
                     <h5 class="card-title">Arsenal</h5>
                     <p class="card-text">R$: 120,00
                     </p>
-                    <a href="#" class="btn btn-orange">Comprar</a>
                   </div>
                 </div>
               </div>
@@ -147,9 +136,9 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
-    </div>
+  </div>
 
-    <section class="cards-info">
+  <section class="cards-info mt-3">
     <div class="container">
       <div class="row">
         <div class="col card-info">
@@ -180,6 +169,7 @@
 
     </div>
   </section>
+  
   <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
       <a href="https://api.whatsapp.com/send/?phone=5511977899540&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer">
@@ -218,11 +208,9 @@ export default {
     color: #fd7e14 ;
     text-align: center;
 }
-.btn-orange:hover{
-background-color: #fca256;
-}
-.btn-orange {
-    background-color: #fd7e14;
-    font-weight: 700;
+
+.card-left{
+  margin-left: 30px !important;
+  text-align: center;
 }
 </style>
