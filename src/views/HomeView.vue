@@ -189,7 +189,7 @@ export default {
 </script>
 <style>
 .card-products-home{
-    background-color: #212529;
+    background-color: #1c2331;
     padding: 2em 0px 2em 0px;
 }
 .card-info{

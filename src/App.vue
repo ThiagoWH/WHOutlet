@@ -2,6 +2,7 @@
   <div>
     <NavbarComponent/>
     <router-view/>
+    <FooterComponent/>
   </div>
   
 </template>

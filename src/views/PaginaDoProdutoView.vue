@@ -1,5 +1,5 @@
 <template>
-    <section class="container mt-2" >
+    <section class="container mt-2 mb-5" >
         <div class="row" :key="produto.id">
             <div class="col-md-6">
                 <div class="card card-width">
