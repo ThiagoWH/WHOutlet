@@ -1,5 +1,5 @@
 <template>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-background">
     <div class="container-fluid">
         <a class="navbar-brand" href="/">
         <img src="../img/Logo.png" alt="" width="30px" height="30px" class="d-inline-block align-text-top">
@@ -24,3 +24,8 @@
     </div>
 </nav>
 </template>
+<style>
+.navbar-background {
+  background-color: #1c2331;
+}
+</style>
