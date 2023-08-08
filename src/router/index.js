@@ -4,6 +4,7 @@ import FemininoView from '../views/FemininoView'
 import MasculinoView from '../views/MasculinoView'
 import SelecoesView from '../views/SelecoesView'
 import PaginaDoProdutoView from '../views/PaginaDoProdutoView'
+import ProductApiView from '../views/ProductApiView'
 
 const routes = [
   {
@@ -30,6 +31,11 @@ const routes = [
     path: '/PaginaDoProduto/:id',
     name: 'PaginaDoProduto',
     component: PaginaDoProdutoView
+  },
+  {
+    path: '/ProductApiView/',
+    name: 'ProductApiView',
+    component: ProductApiView
   }
 ]
 

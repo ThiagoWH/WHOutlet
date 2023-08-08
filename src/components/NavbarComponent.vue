@@ -19,6 +19,9 @@
           <li class="nav-item">
             <a class="nav-link" href="/Selecoes">Seleções</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/ProductApiView">Api Test</a>
+          </li>
         </ul>
       </div>
     </div>
